@@ -1,10 +1,14 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import { nextui } from '@nextui-org/react';
 
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/templates/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -15,6 +19,21 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-}
-export default config
+  darkMode: 'class',
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: '#848aff',
+              foreground: '#ECEDEE',
+              200: '#e5e6ff',
+            },
+          },
+        },
+      },
+    }),
+  ],
+};
+export default config;
