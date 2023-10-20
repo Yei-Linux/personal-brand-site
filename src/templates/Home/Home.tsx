@@ -1,9 +1,11 @@
-import { Hero, SocialNetworks } from '@/modules/home';
+import { About, Hero, Services, SocialNetworks } from '@/modules/home';
 
 export const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center gap-24 min-h-screen p-24">
       <Hero />
+      <About />
+      <Services />
     </main>
   );
 };
