@@ -9,7 +9,7 @@ export const Services = () => {
         <Text className="text-[12px] text-center">My services</Text>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex flex-wrap justify-center gap-3">
         <ServiceCard
           title="Development"
           description="Complete development process, scalable and performant"
