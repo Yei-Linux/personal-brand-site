@@ -1,9 +1,24 @@
-import { Blog } from '@/templates/Blog';
+import path from 'path';
+import fs from 'fs';
+import { BlogFiles } from '@/templates/BlogFiles';
 
-export default function BlogPage() {
-  return (
-    <>
-      <Blog />
-    </>
-  );
+const getBlogFiles = () => {
+  const blogPath = path.join('src', 'blog');
+  const blogFiles = fs.readdirSync(blogPath);
+  let blogFilesResponse = [];
+
+  for (const blog of blogFiles) {
+    blogFilesResponse.push({
+      name: blog.split('-').join(' ').replace('.md', ''),
+      description: '',
+    });
+  }
+
+  return blogFilesResponse;
+};
+
+export default function BlogFilesPage() {
+  const blogFiles = getBlogFiles();
+
+  return <BlogFiles blogFiles={blogFiles} />;
 }

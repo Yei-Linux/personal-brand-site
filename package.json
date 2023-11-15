@@ -6,17 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "blog:medium-to-mysite": "node ./src/scripts/medium-to-blog.js"
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.4",
+    "gray-matter": "^4.0.3",
     "gsap-trial": "^3.12.2",
+    "medium-to-markdown": "^0.0.3",
     "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
