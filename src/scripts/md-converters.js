@@ -1,5 +1,3 @@
-'use strict';
-
 const converters = [
   {
     key: 'mediumInlineLink',
@@ -13,8 +11,7 @@ const converters = [
       },
 
       replacement: function (content, node) {
-        var href = node.getAttribute('href');
-
+        let href = node.getAttribute('href');
         if (href.includes('@jesusalvan2010?') || href.includes('signin?')) {
           return '';
         }
@@ -23,7 +20,7 @@ const converters = [
           href = 'https://medium.com' + href;
         }
 
-        var title = node.title ? ' "' + node.title + '"' : '';
+        const title = node.title ? ' "' + node.title + '"' : '';
         return '[' + content + '](' + href + title + ')';
       },
     },

@@ -1,5 +1,3 @@
-'use strict';
-
 const request = require('request');
 const cheerio = require('cheerio');
 const TurndownService = require('turndown');
@@ -14,6 +12,12 @@ converters.forEach((converter) => {
   turndownService.addRule(converter.key, converter.rule);
 });
 
+/**
+ * Converts the content from a given URL into markdown format.
+ *
+ * @param {string} url - The URL of the content to convert.
+ * @return {Promise<string>} A promise that resolves with the converted markdown content.
+ */
 function convertFromUrl(url) {
   return new Promise(function (resolve, reject) {
     request(
@@ -24,10 +28,10 @@ function convertFromUrl(url) {
       function (err, httpResponse, body) {
         if (err) return reject(err);
 
-        let $ = cheerio.load(body);
-        let html = $('article').html() || '';
+        const $ = cheerio.load(body);
+        const html = $('article').html() || '';
 
-        let markdown = turndownService.turndown(html);
+        const markdown = turndownService.turndown(html);
         resolve(markdown);
       }
     );
