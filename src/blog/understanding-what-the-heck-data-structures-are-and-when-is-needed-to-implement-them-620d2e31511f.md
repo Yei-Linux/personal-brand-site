@@ -1,25 +1,13 @@
 **Understanding what the** heck **data structures** are **and when is needed to implement them😁?**
 ===================================================================================================
 
-[![Jesus Alvan](https://miro.medium.com/v2/resize:fill:88:88/1*smwqbUAGctawfwPYskfG4A.jpeg)
-
-](https://medium.com/@jesusalvan2010?source=post_page-----620d2e31511f--------------------------------)
-
-[Jesus Alvan](https://medium.com/@jesusalvan2010?source=post_page-----620d2e31511f--------------------------------)
-
 ·
 
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2Fe426288ff5c8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jesusalvan2010%2Funderstanding-what-the-heck-data-structures-are-and-when-is-needed-to-implement-them-620d2e31511f&user=Jesus+Alvan&userId=e426288ff5c8&source=post_page-e426288ff5c8----620d2e31511f---------------------post_header-----------)
-
-4 min read·Jul 31
+·
 
 \--
 
 1
-
-Listen
-
-Share
 
 Every time I’m working in a project (whether in a huge project or not), personally the most of **data structures** that I found either in projects or implemented by me are: **arrays and objects** and that’s all even when the implementation could be better with a different data structure.
 
@@ -39,6 +27,7 @@ What is Data Structure? **🙃**
 
 Data structure is the study to understand **how can we organize the data in our software** and **how the data flow is managed in our program**.
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*syooR--pGng7i372OWpOuQ.png)
 Comparing Lego's blocks with data
 
 **To take into account:** Data structure is the structural representation of logical relationship between data elements.
@@ -65,7 +54,12 @@ In this problem the key would be a good searching and finding values without a l
 
 The thought process would be:
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*k9G9sRB0yE_uvvY4o6SYqg.png)
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*kNufDTm5tcviOvQadObRQQ.png)
+
 and the solution using Hash Map in JavaScript would be.
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*g4JfUCPJF9L7QHRNyJUrug.png)
 
 In this solution the steps are:
 
@@ -80,6 +74,8 @@ As you can see using a Hash Map the performance of our program is much better an
 
 **Types and Classification of Data Structure 😁**
 =================================================
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/0*tRXy5ynHKlvjW864.png)
 
 1.  **Primitive Data Structures:**
 
@@ -120,3 +116,5 @@ Data Structures are so useful to organize our data elements and improve the perf
 The first Data Structure will be Linked List with a real project and exercises when we can use this data structure (from leet code). After that , the upcoming topics will be Stacks, Queues, Trees ,Graphs, Tables and Sets.
 
 So excited to talk about these useful topics. See you soon in the next post!
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*W3aNN0OszvhWWvZxR_F-Aw.png)

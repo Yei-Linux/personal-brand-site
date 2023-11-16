@@ -1,23 +1,13 @@
 Building a Tinder Swipe Cards in React Native 😀
 ================================================
 
-[![Jesus Alvan](https://miro.medium.com/v2/resize:fill:88:88/1*smwqbUAGctawfwPYskfG4A.jpeg)
-
-](https://medium.com/@jesusalvan2010?source=post_page-----eaa290e92be2--------------------------------)
-
-[Jesus Alvan](https://medium.com/@jesusalvan2010?source=post_page-----eaa290e92be2--------------------------------)
+·
 
 ·
 
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2Fe426288ff5c8&operation=register&redirect=https%3A%2F%2Fmedium.com%2F%40jesusalvan2010%2Fmaking-a-tinder-swipe-cards-in-react-native-eaa290e92be2&user=Jesus+Alvan&userId=e426288ff5c8&source=post_page-e426288ff5c8----eaa290e92be2---------------------post_header-----------)
-
-6 min read·Sep 22
-
 \--
 
-Listen
-
-Share
+![Alt text](https://miro.medium.com/v2/resize:fit:640/0*VWHIgeVlz5_txjEP.png)
 
 We’ve all seen these dating apps where show a list of users and if you like to stablish a conversation you have to swipe card to the right or left if you don’t like.
 
@@ -33,6 +23,8 @@ Understanding **about Animated and PanResponder API in React Native** 🤓
 
 **The Animated API** is designed to add good animations in a performant way.Animated exports 6 animatable components: Views, Text, Image, ScrollView, FlatList and SectionList.However you can create your own components with Animated.createAnimatedComponent().
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*CIfSjOyHZv7cjLzJl1JaXg.png)
+
 In the example before. The FadeInView starts with:
 
 ```
@@ -44,7 +36,7 @@ In this first Line we are creating our fadeIn animation with Value Zero. In our 
 After that we have:
 
 ```
- Animated.timing(fadeAnim, {  
+   Animated.timing(fadeAnim, {  
       toValue: 1,  
       duration: 10000,  
       useNativeDriver: true,  
@@ -57,6 +49,8 @@ For using this animation we’ll have to add an <Animation.View> component with 
 
 Now let’s suppose we want to bounce a ball with Animation API. In this case we are going to need using **Animated.ValueXY({}). Let’s check it out!**
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*oWH5ev4BMwlrPX5mg8ajRg.png)
+
 First thing to do is creating an animation with Animated.ValueXY({x: 10, y: 450}) :
 
 ```
@@ -65,9 +59,14 @@ const bounce = useRef(new Animated.ValueXY({x: 10, y: 450})).current;
 
 This line set the position in X= 10 and Y=450 initially. After that when we press on Touchable Component it calls move function and runs Animated.spring with position values x: 250 and y: 10. This change the position from 10,450 to 250,10.
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/0*NaV_7DmeWoVDWsK_.gif)
+
 **The PanResponder API** is designed to add good animations in a performant identifying gestures actions. Most React Native components, like `View`, can handle touch/click events. However, the APIs for doing this are fairly low level, so we rarely use them directly. Instead, we use the `PanResponder` API, which is a higher level abstraction for handling touch/click events.
 
 Let see an example to drag an drop this element:
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*aC_RBQOS0axjL31xb8ZQUw.png)
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*f_dyrfD2QW-XOZx2Ryhr1w.png)
 
 For creating a component to drag and drop we will use PanResponder.create({…}). Let see the parameters:
 
@@ -84,6 +83,8 @@ Finally is added the X and Y position from pan to the transform styles in <Anima
 
 Now we can start checking our SwipeCard Component. Let’s take a look:
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*AA4v-xBxoBsE5KDlfMagzg.png)
+
 First we create Animated.ValueXY() that will be swipe animation on each card. The other one is titlSign(create Animated.Value(1)) for card rotation.
 
 After that PanResponder creates a reference with:
@@ -95,6 +96,8 @@ After that PanResponder creates a reference with:
 **onPanResponderRelease** is called when the action is done.Here we validate in case of swipe is out the screen we animate the card and remove the card from the list. Otherwise if not out of the screen , this card go back to initial position.
 
 Let’s continue with our **SwipeCard Component**:
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*FAd-2EBpdLDZV07TyVPl2g.png)
 
 **RemoveTopCard** is used for removing the first card from the list and set the swipe value to x:0 and y:0.
 
@@ -117,11 +120,17 @@ In the next section we’ll see the implementation. The same thing happens with 
 
 Now, let’s take a look how we can use this SwipeCard Component.
 
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*A7EoD3n5BK2isCm9xNjZnA.png)
+
 In this first part we can highlight the likeOpacity and nopeOpacity these guys aims to manage the opacity of Like Text in the right and NopeText in the left. After that we have the method to render these texts.
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*UcKSniT_-eG0FD9B2yWK8A.png)
 
 Finally we are calling the SwipeCard Component also passing the Actions Bar(where are the like button, nope button and chat button). Then is rendering each Card getting the item, swipe and isFirst argument also returning the Card Component with each item info.
 
 The result looks like this:
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/1*RxZJeKXDHbhAEaJ1UdtC8Q.gif)
 
 As always you can use these component for your own projects checking this component in the github repository.
 
@@ -135,3 +144,5 @@ Animations API and Pan API are so powerfull to make great things in react native
 In this post we developed a SwipeCard component, in future posts we are going to build the chat section in our app.Don’t miss the next post!
 
 See you soon in the next one!
+
+![Alt text](https://miro.medium.com/v2/resize:fit:640/0*1-D3aBpz1Y-r6wSS.png)

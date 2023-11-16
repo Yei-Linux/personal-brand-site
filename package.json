@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
+    "cheerio": "^1.0.0-rc.12",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
@@ -21,7 +22,10 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "request": "^2.88.2",
+    "turndown": "^7.1.2",
+    "turndown-plugin-gfm": "^1.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",

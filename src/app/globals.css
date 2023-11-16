@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-svg {
-    color: #848aff;
+.blog-wrapper p {
+    margin-bottom: 1rem;
+}
+
+.blog-wrapper ol {
+    list-style:decimal;
 }

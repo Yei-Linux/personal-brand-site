@@ -1,4 +1,4 @@
-const mediumToMarkdown = require('medium-to-markdown');
+const mediumToMarkdown = require('./medium-to-markdown');
 const fs = require('fs');
 const path = require('path');
 
@@ -15,7 +15,7 @@ const getMediumToMyBlog = async () => {
       throw new Error('Medium url is not passed');
     }
 
-    const markdown = await mediumToMarkdown.convertFromUrl(mediumUrl);
+    const markdown = await mediumToMarkdown(mediumUrl);
     if (!markdown) {
       throw new Error('Medium url was nos found');
     }
