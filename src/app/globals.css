@@ -54,6 +54,12 @@
     font-weight: 600;
 }
 
+
+.blog-wrapper code {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
 .blog-wrapper p > code, .blog-wrapper pre {
     padding: 5px 1rem;
     border-radius: 0.7em;

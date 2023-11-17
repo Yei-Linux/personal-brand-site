@@ -11,8 +11,15 @@ import {
 export interface IProductCard {
   title: string;
   description: string;
+  slug: string;
+  githubLink: string;
 }
-export const ProductCard = ({ title, description }: IProductCard) => {
+export const ProductCard = ({
+  title,
+  description,
+  slug,
+  githubLink,
+}: IProductCard) => {
   return (
     <Card className="max-w-[200px]">
       <CardHeader className="flex flex-col gap-2">
@@ -26,10 +33,14 @@ export const ProductCard = ({ title, description }: IProductCard) => {
         <p className="text-center text-[14px]">{description}</p>
       </CardBody>
       <CardFooter className="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <Button color="primary">Product</Button>
-        <Button color="primary" variant="bordered">
-          Github
-        </Button>
+        <Link href={`/products/${slug}`}>
+          <Button color="primary">Product</Button>
+        </Link>
+        <Link href={githubLink}>
+          <Button color="primary" variant="bordered">
+            Github
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );
