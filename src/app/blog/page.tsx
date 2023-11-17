@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
-import { BlogFiles } from '@/templates/BlogFiles';
+import { BlogFiles, IBlogItem } from '@/templates/BlogFiles';
+import matter from 'gray-matter';
 
 const getBlogFiles = () => {
   const blogPath = path.join('src', 'blog');
@@ -8,10 +9,16 @@ const getBlogFiles = () => {
   let blogFilesResponse = [];
 
   for (const blog of blogFiles) {
+    const blogFilePath = path.join('src', 'blog', blog);
+    const markdown = fs.readFileSync(blogFilePath, 'utf-8');
+
+    const matterResult = matter(markdown);
+    const metadata = matterResult.data;
+
     blogFilesResponse.push({
-      name: blog.split('-').join(' ').replace('.md', ''),
-      description: '',
-    });
+      ...metadata,
+      storyUrl: blog.replace('.md', ''),
+    } as IBlogItem);
   }
 
   return blogFilesResponse;

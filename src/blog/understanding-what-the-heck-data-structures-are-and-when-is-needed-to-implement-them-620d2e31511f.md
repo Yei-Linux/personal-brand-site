@@ -1,13 +1,12 @@
+---
+storyReadTime: 4 min read
+storyPublishDate: Jul 31
+storyImage: https://miro.medium.com/v2/resize:fit:640/1*syooR--pGng7i372OWpOuQ.png
+storyTitle: understanding what the heck data structures are and when is needed to implement them
+---
+
 **Understanding what the** heck **data structures** are **and when is needed to implement them😁?**
 ===================================================================================================
-
-·
-
-·
-
-\--
-
-1
 
 Every time I’m working in a project (whether in a huge project or not), personally the most of **data structures** that I found either in projects or implemented by me are: **arrays and objects** and that’s all even when the implementation could be better with a different data structure.
 

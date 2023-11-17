@@ -8,17 +8,32 @@ const converters = require('./md-converters');
 const turndownService = new TurndownService();
 turndownService.use(gfm);
 
+let metadata = {};
+const buildingMetadata = (newValues) => {
+  if (metadata[Object.keys(newValues)[0]]) {
+    return;
+  }
+  metadata = { ...metadata, ...newValues };
+};
+
+const convertMetadataToMDFormat = (metadata, blogFileMD) => {
+  metadata = {
+    ...metadata,
+    storyTitle: blogFileMD.split('-').slice(0, -1).join(' '),
+  };
+
+  const mdFormat = Object.entries(metadata).reduce((acc, [key, value]) => {
+    return `${acc}${key}: ${value}\n`;
+  }, '---\n');
+
+  return `${mdFormat}---\n\n`;
+};
+
 converters.forEach((converter) => {
-  turndownService.addRule(converter.key, converter.rule);
+  turndownService.addRule(converter.key, converter.rule(buildingMetadata));
 });
 
-/**
- * Converts the content from a given URL into markdown format.
- *
- * @param {string} url - The URL of the content to convert.
- * @return {Promise<string>} A promise that resolves with the converted markdown content.
- */
-function convertFromUrl(url) {
+function convertFromUrl(url, blogFileMD) {
   return new Promise(function (resolve, reject) {
     request(
       {
@@ -32,7 +47,11 @@ function convertFromUrl(url) {
         const html = $('article').html() || '';
 
         const markdown = turndownService.turndown(html);
-        resolve(markdown);
+        const metadataFormatted = convertMetadataToMDFormat(
+          metadata,
+          blogFileMD
+        );
+        resolve(metadataFormatted + markdown);
       }
     );
   });

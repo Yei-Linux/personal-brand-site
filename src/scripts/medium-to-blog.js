@@ -15,12 +15,12 @@ const getMediumToMyBlog = async () => {
       throw new Error('Medium url is not passed');
     }
 
-    const markdown = await mediumToMarkdown(mediumUrl);
+    const blogFileMD = mediumUrl.split('/').slice(-1) + '.md';
+    const markdown = await mediumToMarkdown(mediumUrl, blogFileMD);
     if (!markdown) {
       throw new Error('Medium url was nos found');
     }
 
-    const blogFileMD = mediumUrl.split('/').slice(-1) + '.md';
     const blogPath = path.join('src', 'blog', blogFileMD);
 
     const isExists = fs.existsSync(blogPath);

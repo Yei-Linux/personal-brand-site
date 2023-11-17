@@ -10,11 +10,13 @@ const handleMD = async (slug: string) => {
   const markdown = fs.readFileSync(blogFilesPath, 'utf-8');
 
   const matterResult = matter(markdown);
+  const metadata = matterResult.data;
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
   const contentHTML = processedContent.toString();
-  return contentHTML;
+
+  return { contentHTML, metadata };
 };
 
 type PageProps = {
@@ -23,7 +25,7 @@ type PageProps = {
   };
 };
 export default async function BlogFile({ params: { slug } }: PageProps) {
-  const contentHTML = await handleMD(slug);
+  const { contentHTML, metadata } = await handleMD(slug);
 
   return <Blog contentHTML={contentHTML} />;
 }

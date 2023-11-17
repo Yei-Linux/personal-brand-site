@@ -1,11 +1,12 @@
+---
+storyReadTime: 6 min read
+storyPublishDate: Sep 22
+storyImage: https://miro.medium.com/v2/resize:fit:640/0*VWHIgeVlz5_txjEP.png
+storyTitle: making a tinder swipe cards in react native
+---
+
 Building a Tinder Swipe Cards in React Native 😀
 ================================================
-
-·
-
-·
-
-\--
 
 ![Alt text](https://miro.medium.com/v2/resize:fit:640/0*VWHIgeVlz5_txjEP.png)
 
