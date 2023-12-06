@@ -15,14 +15,18 @@ export const Products = () => {
           ([
             slug,
             {
+              img,
+              siteLink,
               metadata,
               hero: { githubLink },
             },
           ]) => (
             <ProductCard
+              img={img}
               key={slug}
               slug={slug}
-              githubLink={githubLink}
+              githubLink={githubLink ?? ''}
+              siteLink={siteLink}
               {...metadata}
             />
           )

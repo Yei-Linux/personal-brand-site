@@ -4,6 +4,7 @@ import { About, Hero, Services } from '@/modules/home';
 import { Companies } from '@/modules/home/Companies';
 import { Products } from '@/modules/home/Products';
 import { Skills } from '@/modules/home/Skills/Skills';
+import { Startups } from '@/modules/home/Startups';
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <Hero />
       <About />
       <Companies />
+      <Startups />
       <Services />
       <Skills />
       <Products />

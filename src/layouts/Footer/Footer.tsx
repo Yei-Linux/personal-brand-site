@@ -1,3 +1,5 @@
+import { SocialNetworksFragment } from '@/modules/home/Hero/SocialNetworks';
+import Link from 'next/link';
 import {
   AiOutlineLinkedin,
   AiOutlineGithub,
@@ -13,23 +15,19 @@ export const Footer = () => {
           <p>Branding Site</p>
         </div>
         <ul className="flex gap-8">
-          <li>Home</li>
-          <li>Blog</li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
         </ul>
         <ul className="flex gap-8">
-          <li>
-            <AiOutlineLinkedin color="white" />
-          </li>
-          <li>
-            <AiOutlineGithub color="white" />
-          </li>
-          <li>
-            <AiOutlineTwitter color="white" />
-          </li>
+          <SocialNetworksFragment />
         </ul>
       </div>
       <div className="max-w-[900px] m-auto mt-[35px] flex justify-center">
-        <p>@All rights reserved</p>
+        <p>@Jesus Alvan 2023</p>
       </div>
     </footer>
   );

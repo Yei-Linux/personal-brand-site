@@ -5,8 +5,9 @@ export const Services = () => {
   return (
     <section className="flex flex-col gap-5">
       <div>
-        <Title className="text-[28px] font-bold text-center">Services</Title>
-        <Text className="text-[12px] text-center">My services</Text>
+        <Title className="text-[28px] font-bold text-center">
+          My Services as a Freelancer
+        </Title>
       </div>
 
       <div className="flex flex-wrap justify-center gap-3">

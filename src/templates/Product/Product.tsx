@@ -8,7 +8,7 @@ export interface IProduct {
 export const Product = ({ slug }: IProduct) => {
   const product = productConfig[slug];
 
-  if (!product)
+  if (!product || product?.siteLink)
     return (
       <>
         <p>Product not found</p>

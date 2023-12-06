@@ -5,7 +5,7 @@ export interface IHero {
   productTitle?: string;
   title: string;
   description: string;
-  githubLink: string;
+  githubLink?: string;
   productSiteExternalLink: string;
   imageProduct: string;
 }
@@ -33,11 +33,13 @@ export const Hero = ({
           <Link href={productSiteExternalLink}>
             <Button color="primary">Site</Button>
           </Link>
-          <Link href={githubLink}>
-            <Button color="primary" variant="bordered">
-              Github
-            </Button>
-          </Link>
+          {githubLink && (
+            <Link href={githubLink}>
+              <Button color="primary" variant="bordered">
+                Github
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

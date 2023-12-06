@@ -1,6 +1,7 @@
 import { Title, Text } from '@/ui';
 import { Button, Image } from '@nextui-org/react';
 import { SocialNetworks } from './SocialNetworks';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
@@ -19,11 +20,15 @@ export const Hero = () => {
             Software Engineering and SoloEntrepenuer
           </Text>
           <Text className="text-[14px]">
-            Creating new projects, innovating with new ideas and more things
+            Creating new products, working in a company, 2 startups and
+            freelance.
           </Text>
-          <Button className="max-w-[150px]" color="primary" fullWidth>
-            Contactme
-          </Button>
+
+          <Link href="mailto:jesusalvan2010@gmail.com?subject = Tech work&body = Hello!I want to have a meeting to talk">
+            <Button className="max-w-[150px]" color="primary" fullWidth>
+              Contactme
+            </Button>
+          </Link>
         </div>
         <SocialNetworks />
       </div>
