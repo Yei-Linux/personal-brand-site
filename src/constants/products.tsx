@@ -50,7 +50,8 @@ export const productConfig: Record<string, TProductItem> = {
     ],
   },
   contentCreatorIA: {
-    img: 'https://cdn-icons-png.flaticon.com/512/5731/5731863.png',
+    img: 'https://i.pinimg.com/originals/02/61/18/0261188a351ebd989dd394761403da28.jpg',
+    siteLink: 'https://youtube-mixer-chi.vercel.app',
     metadata: {
       title: 'Content Creator IA',
       description:
@@ -61,7 +62,7 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'https://github.com/Yei-Linux/youtube-mixer',
-      productSiteExternalLink: 'http://gamiui.com',
+      productSiteExternalLink: 'https://youtube-mixer-chi.vercel.app',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },
@@ -87,7 +88,8 @@ export const productConfig: Record<string, TProductItem> = {
     ],
   },
   workloverIA: {
-    img: 'https://cdn-icons-png.flaticon.com/512/5731/5731863.png',
+    img: 'https://i.pinimg.com/originals/02/61/18/0261188a351ebd989dd394761403da28.jpg',
+    siteLink: 'https://workbook-lover-lang.vercel.app',
     metadata: {
       title: 'Workbook Lover IA',
       description: 'Generates podcast audio uploading a PDF',
@@ -97,7 +99,7 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'hhttps://github.com/Yei-Linux/workbook-lover-lang',
-      productSiteExternalLink: 'http://gamiui.com',
+      productSiteExternalLink: 'https://workbook-lover-lang.vercel.app',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },

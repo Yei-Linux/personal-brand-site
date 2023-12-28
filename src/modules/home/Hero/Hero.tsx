@@ -10,7 +10,7 @@ export const Hero = () => {
         <Image
           width={200}
           alt="NextUI hero Image"
-          src="https://media.licdn.com/dms/image/C4D03AQHfDToGxIpppw/profile-displayphoto-shrink_200_200/0/1648072581843?e=1703116800&v=beta&t=cNEXVi84RJ7nv644eLoZjBBQO5OjG1-fX5ICrcpkRDc"
+          src="https://media.licdn.com/dms/image/C4D03AQHfDToGxIpppw/profile-displayphoto-shrink_800_800/0/1648072582383?e=1709164800&v=beta&t=WH4dqpFztKOCGolqCXpAUIhDpo11It6kr1u0mqfNPxY"
         />
       </div>
       <div className="flex gap-8">
