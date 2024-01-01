@@ -41,9 +41,11 @@ export const ProductCard = ({
         <p className="text-center text-[14px]">{description}</p>
       </CardBody>
       <CardFooter className="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <Link href={siteLink ?? `/products/${slug}`}>
-          <Button color="primary">Product</Button>
-        </Link>
+        {siteLink && (
+          <Link href={siteLink ?? `/products/${slug}`}>
+            <Button color="primary">Product</Button>
+          </Link>
+        )}
         {githubLink && (
           <Link href={githubLink}>
             <Button color="primary" variant="bordered">

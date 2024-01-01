@@ -6,7 +6,7 @@ export interface IHero {
   title: string;
   description: string;
   githubLink?: string;
-  productSiteExternalLink: string;
+  productSiteExternalLink?: string;
   imageProduct: string;
 }
 

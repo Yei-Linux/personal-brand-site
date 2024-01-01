@@ -135,7 +135,6 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'https://github.com/Yei-Linux/dating-app',
-      productSiteExternalLink: 'http://gamiui.com',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },
@@ -246,7 +245,6 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'https://github.com/GamiLife/EasyMenuWeb',
-      productSiteExternalLink: 'http://gamiui.com',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },
@@ -282,7 +280,6 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'https://github.com/GamiLife/Noteverse',
-      productSiteExternalLink: 'http://gamiui.com',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },
@@ -318,7 +315,6 @@ export const productConfig: Record<string, TProductItem> = {
         'Make beautiful and gamificated sites with all the powerful of GamiUI',
       description: 'Fun, Gamificated and moderm React UI Library',
       githubLink: 'https://github.com/Yei-Linux/useScreeRecording-YL',
-      productSiteExternalLink: 'http://gamiui.com',
       imageProduct:
         'https://camo.githubusercontent.com/932885e5602a4e8f8dc6d07e5d0ac057424ef75eef8d18faa4d5d235832a34d9/68747470733a2f2f692e696d6775722e636f6d2f38456b577948542e706e67',
     },
