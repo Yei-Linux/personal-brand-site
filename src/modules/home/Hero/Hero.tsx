@@ -7,11 +7,7 @@ export const Hero = () => {
   return (
     <section className="flex justify-center flex-wrap gap-8">
       <div className="flex justify-center w-full sm:w-auto">
-        <Image
-          width={200}
-          alt="NextUI hero Image"
-          src="https://media.licdn.com/dms/image/C4D03AQHfDToGxIpppw/profile-displayphoto-shrink_800_800/0/1648072582383?e=1709164800&v=beta&t=WH4dqpFztKOCGolqCXpAUIhDpo11It6kr1u0mqfNPxY"
-        />
+        <Image width={200} alt="NextUI hero Image" src="/profile.jpeg" />
       </div>
       <div className="flex gap-8">
         <div className="flex flex-col gap-3 max-w-[350px]">

@@ -24,7 +24,7 @@ export const About = () => {
             <Achievements.Item title="1" description="libraries" />
           </Achievements>
 
-          <Link href="/CV-JesusAlvan.pdf" download>
+          <Link href="/cv.pdf" download>
             <Button
               className="max-w-[150px]"
               color="primary"

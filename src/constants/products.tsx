@@ -51,7 +51,6 @@ export const productConfig: Record<string, TProductItem> = {
   },
   contentCreatorIA: {
     img: 'https://i.pinimg.com/originals/02/61/18/0261188a351ebd989dd394761403da28.jpg',
-    siteLink: 'https://youtube-mixer-chi.vercel.app',
     metadata: {
       title: 'Content Creator IA',
       description:
@@ -89,7 +88,6 @@ export const productConfig: Record<string, TProductItem> = {
   },
   workloverIA: {
     img: 'https://i.pinimg.com/originals/02/61/18/0261188a351ebd989dd394761403da28.jpg',
-    siteLink: 'https://workbook-lover-lang.vercel.app',
     metadata: {
       title: 'Workbook Lover IA',
       description: 'Generates podcast audio uploading a PDF',
@@ -161,7 +159,7 @@ export const productConfig: Record<string, TProductItem> = {
   },
   anna: {
     siteLink: 'https://www.annasalud.com',
-    img: 'https://media.licdn.com/dms/image/D4E0BAQGrmI2eBf251g/company-logo_200_200/0/1691002269457/annasalud_logo?e=1709769600&v=beta&t=nRYDoRvlROYxRUo9CdrF2E66v_4sOGYczV04uQVidZU',
+    img: '/anna.jpeg',
     metadata: {
       title: 'Anna',
       description: 'Platform where we can take care people',
@@ -199,7 +197,7 @@ export const productConfig: Record<string, TProductItem> = {
   qeto: {
     siteLink:
       'https://play.google.com/store/apps/details?id=com.apayqhatu.qeto',
-    img: 'https://media.licdn.com/dms/image/D4E0BAQFqb3X7FabFRw/company-logo_200_200/0/1696122815422?e=1709769600&v=beta&t=PAlOUvtznbfzVKe0c0PwK3vVJ5AqZDbGgYIZgyTSfuc',
+    img: '/qeto.jpeg',
     metadata: {
       title: 'Qeto',
       description: 'Platform where markets and stores can be exposed',

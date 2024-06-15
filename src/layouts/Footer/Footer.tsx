@@ -12,7 +12,6 @@ export const Footer = () => {
       <div className="flex flex-wrap gap-3 justify-between max-w-[900px] m-auto">
         <div>
           <p className="font-bold text-[18px]">Jesus Alvan</p>
-          <p>Branding Site</p>
         </div>
         <ul className="flex gap-8">
           <li>
