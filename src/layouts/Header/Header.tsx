@@ -1,4 +1,4 @@
-import { Image, Link } from '@nextui-org/react';
+import { Image, Link } from "@nextui-org/react";
 
 export const Header = () => {
   return (
@@ -10,9 +10,6 @@ export const Header = () => {
         <ul className="flex gap-3">
           <li>
             <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
           </li>
         </ul>
       </div>
